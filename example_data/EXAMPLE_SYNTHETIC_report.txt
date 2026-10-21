@@ -1,0 +1,39 @@
+########################################################################
+# EXAMPLE / SYNTHETIC DATA - these numbers mean nothing about the real checker.
+########################################################################
+Labellers: ['H1', 'H2']; label rows: 120
+Human-human  H1 vs H2: n=60 kappa=0.738 agreement=0.833
+Consensus labels: 50; disputed (excluded until adjudicated with labeller_id=ADJ): 10 ['EX010', 'EX023', 'EX027', 'EX033', 'EX036', 'EX037', 'EX039', 'EX040', 'EX041', 'EX056']
+Human label distribution: {'partial': 16, 'unverifiable': 5, 'supported': 24, 'not_supported': 5}
+Claims with both checker output and human consensus: 50
+
+== PRIMARY (positive = human not_supported): positives=5 of 50
+system                    flag precision           flag recall          queue rate  false-pass  caught(flag|queue)
+two_checker_gate       1.000 [0.34-1.00]     0.400 [0.12-0.77]   0.600 [0.46-0.72]       0.000               1.000
+single_checker_A       0.667 [0.30-0.90]     0.800 [0.38-0.96]   0.500 [0.37-0.63]       0.000               1.000
+single_checker_B       0.600 [0.23-0.88]     0.600 [0.23-0.88]   0.480 [0.35-0.61]       0.000               1.000
+  (flagged/tp/fp: two_checker_gate=2/2/0; single_checker_A=6/4/2; single_checker_B=5/3/2)
+
+== SECONDARY (+ retracted_source): positives=5 of 50
+system                    flag precision           flag recall          queue rate  false-pass  caught(flag|queue)
+two_checker_gate       1.000 [0.34-1.00]     0.400 [0.12-0.77]   0.600 [0.46-0.72]       0.000               1.000
+single_checker_A       0.667 [0.30-0.90]     0.800 [0.38-0.96]   0.500 [0.37-0.63]       0.000               1.000
+single_checker_B       0.600 [0.23-0.88]     0.600 [0.23-0.88]   0.480 [0.35-0.61]       0.000               1.000
+  (flagged/tp/fp: two_checker_gate=2/2/0; single_checker_A=6/4/2; single_checker_B=5/3/2)
+
+== Verdict agreement (Cohen's kappa, 4 labels)
+checker A vs human     n=50   kappa=0.608
+checker B vs human     n=50   kappa=0.571
+checker A vs B         n=50   kappa=0.847  (high A-B agreement + low human agreement = shared mistakes)
+third reader vs human  n=5    kappa=0.643
+
+== HEADLINE: checker-checker vs checker-human agreement gap
+agreement gap = kappa(A,B) - mean(kappa(A,human), kappa(B,human)) = 0.258 [0.06-0.45]  (n=50, 2000 bootstrap resamples)
+  > 0: checkers agree with each other more than with people (shared error); ~0: their agreement tracks the truth.
+basis=abstract_only  n=5    queue=0.600 flag_prec=n/a flag_recall=0.000
+basis=full_text      n=45   queue=0.600 flag_prec=1.000 flag_recall=0.500
+
+== Seed items (constructed, known answer)
+labeller H1: 9/10 seed labels match the key
+labeller H2: 10/10 seed labels match the key
+system: 10/10 seed items routed acceptably (problem seeds must not be auto-'supported')

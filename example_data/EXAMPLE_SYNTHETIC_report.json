@@ -1,0 +1,216 @@
+{
+  "synthetic": true,
+  "iaa": [
+    {
+      "pair": [
+        "H1",
+        "H2"
+      ],
+      "n": 60,
+      "kappa": 0.7375328083989502,
+      "pct_agree": 0.8333333333333334
+    }
+  ],
+  "n_scored": 50,
+  "disputed": [
+    "EX010",
+    "EX023",
+    "EX027",
+    "EX033",
+    "EX036",
+    "EX037",
+    "EX039",
+    "EX040",
+    "EX041",
+    "EX056"
+  ],
+  "systems": {
+    "two_checker_gate": {
+      "primary": {
+        "n": 50,
+        "positives": 5,
+        "flagged": 2,
+        "tp": 2,
+        "fp": 0,
+        "fn": 3,
+        "flag_precision": 1.0,
+        "flag_precision_ci": [
+          0.34237195288961925,
+          1.0
+        ],
+        "flag_recall": 0.4,
+        "flag_recall_ci": [
+          0.1176182311592533,
+          0.769280067791163
+        ],
+        "flag_f1": 0.5714285714285715,
+        "human_queue_rate": 0.6,
+        "human_queue_ci": [
+          0.4618118910275937,
+          0.7239181021375425
+        ],
+        "auto_supported_rate": 0.36,
+        "false_pass_rate": 0.0,
+        "false_pass_count": 0,
+        "caught_by_flag_or_queue_recall": 1.0
+      },
+      "secondary": {
+        "n": 50,
+        "positives": 5,
+        "flagged": 2,
+        "tp": 2,
+        "fp": 0,
+        "fn": 3,
+        "flag_precision": 1.0,
+        "flag_precision_ci": [
+          0.34237195288961925,
+          1.0
+        ],
+        "flag_recall": 0.4,
+        "flag_recall_ci": [
+          0.1176182311592533,
+          0.769280067791163
+        ],
+        "flag_f1": 0.5714285714285715,
+        "human_queue_rate": 0.6,
+        "human_queue_ci": [
+          0.4618118910275937,
+          0.7239181021375425
+        ],
+        "auto_supported_rate": 0.36,
+        "false_pass_rate": 0.0,
+        "false_pass_count": 0,
+        "caught_by_flag_or_queue_recall": 1.0
+      }
+    },
+    "single_checker_A": {
+      "primary": {
+        "n": 50,
+        "positives": 5,
+        "flagged": 6,
+        "tp": 4,
+        "fp": 2,
+        "fn": 1,
+        "flag_precision": 0.6666666666666666,
+        "flag_precision_ci": [
+          0.29998832134152864,
+          0.9032306674407831
+        ],
+        "flag_recall": 0.8,
+        "flag_recall_ci": [
+          0.3755282641185388,
+          0.9637768390302125
+        ],
+        "flag_f1": 0.7272727272727272,
+        "human_queue_rate": 0.5,
+        "human_queue_ci": [
+          0.36644286412332855,
+          0.6335571358766714
+        ],
+        "auto_supported_rate": 0.38,
+        "false_pass_rate": 0.0,
+        "false_pass_count": 0,
+        "caught_by_flag_or_queue_recall": 1.0
+      },
+      "secondary": {
+        "n": 50,
+        "positives": 5,
+        "flagged": 6,
+        "tp": 4,
+        "fp": 2,
+        "fn": 1,
+        "flag_precision": 0.6666666666666666,
+        "flag_precision_ci": [
+          0.29998832134152864,
+          0.9032306674407831
+        ],
+        "flag_recall": 0.8,
+        "flag_recall_ci": [
+          0.3755282641185388,
+          0.9637768390302125
+        ],
+        "flag_f1": 0.7272727272727272,
+        "human_queue_rate": 0.5,
+        "human_queue_ci": [
+          0.36644286412332855,
+          0.6335571358766714
+        ],
+        "auto_supported_rate": 0.38,
+        "false_pass_rate": 0.0,
+        "false_pass_count": 0,
+        "caught_by_flag_or_queue_recall": 1.0
+      }
+    },
+    "single_checker_B": {
+      "primary": {
+        "n": 50,
+        "positives": 5,
+        "flagged": 5,
+        "tp": 3,
+        "fp": 2,
+        "fn": 2,
+        "flag_precision": 0.6,
+        "flag_precision_ci": [
+          0.23071993220883708,
+          0.8823817688407467
+        ],
+        "flag_recall": 0.6,
+        "flag_recall_ci": [
+          0.23071993220883708,
+          0.8823817688407467
+        ],
+        "flag_f1": 0.6,
+        "human_queue_rate": 0.48,
+        "human_queue_ci": [
+          0.3479691239550571,
+          0.6148848774119157
+        ],
+        "auto_supported_rate": 0.42,
+        "false_pass_rate": 0.0,
+        "false_pass_count": 0,
+        "caught_by_flag_or_queue_recall": 1.0
+      },
+      "secondary": {
+        "n": 50,
+        "positives": 5,
+        "flagged": 5,
+        "tp": 3,
+        "fp": 2,
+        "fn": 2,
+        "flag_precision": 0.6,
+        "flag_precision_ci": [
+          0.23071993220883708,
+          0.8823817688407467
+        ],
+        "flag_recall": 0.6,
+        "flag_recall_ci": [
+          0.23071993220883708,
+          0.8823817688407467
+        ],
+        "flag_f1": 0.6,
+        "human_queue_rate": 0.48,
+        "human_queue_ci": [
+          0.3479691239550571,
+          0.6148848774119157
+        ],
+        "auto_supported_rate": 0.42,
+        "false_pass_rate": 0.0,
+        "false_pass_count": 0,
+        "caught_by_flag_or_queue_recall": 1.0
+      }
+    }
+  },
+  "kappa_a_vs_human": 0.6079613992762364,
+  "kappa_b_vs_human": 0.5708154506437768,
+  "kappa_a_vs_b": 0.8470948012232417,
+  "agreement_gap": {
+    "gap": 0.2577063762632351,
+    "ci95": [
+      0.06182408225427416,
+      0.4541198501872659
+    ],
+    "bootstrap_resamples": 2000,
+    "n": 50,
+    "definition": "kappa(A,B) - mean(kappa(A,human), kappa(B,human))"
+  }
+}
