@@ -1,0 +1,11 @@
+claim_id,case_type,expected_label,expected_issue,rationale
+EX051,synthetic_seed,unverifiable,,SYNTHETIC_EXAMPLE
+EX052,synthetic_seed,supported,,SYNTHETIC_EXAMPLE
+EX053,synthetic_seed,partial,,SYNTHETIC_EXAMPLE
+EX054,synthetic_seed,supported,,SYNTHETIC_EXAMPLE
+EX055,synthetic_seed,supported,,SYNTHETIC_EXAMPLE
+EX056,synthetic_seed,supported,,SYNTHETIC_EXAMPLE
+EX057,synthetic_seed,partial,,SYNTHETIC_EXAMPLE
+EX058,synthetic_seed,not_supported,,SYNTHETIC_EXAMPLE
+EX059,synthetic_seed,partial,,SYNTHETIC_EXAMPLE
+EX060,synthetic_seed,unverifiable,,SYNTHETIC_EXAMPLE
