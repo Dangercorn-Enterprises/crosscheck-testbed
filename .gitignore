@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+report.json
+labels_B*_*.csv
+# coordinator-only material must never be committed
+claims.csv
+!example_data/claims.csv
+seed_answer_key.csv
+build_claims.py
+source_cache/
+demo/
